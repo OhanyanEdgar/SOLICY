@@ -15,6 +15,7 @@ const Header = () => {
     <div className='header'>
       Header
       <button onClick={() => dispatch(addCard())}>Add Card</button>
+      <button onClick={() => dispatch(addCard())}>Del Card</button>
     </div>
   )
 }

@@ -11,6 +11,8 @@ const cardsReducer = (state = [], action) => {
                 id: Math.random(),
                 color: Math.random().toString(16).substr(-6),
             }]
+        case types.DEL_CARD:
+            return state.filter(card => card.id !== action.payload)
         default:
             return state;
     }
