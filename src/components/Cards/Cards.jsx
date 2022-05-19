@@ -23,7 +23,7 @@ const Cards = ({}) => {
         {cards.map((card, index) => (
           <Grid item xs={2} sm={4} md={6} key={card.id}>
           {/* <Grid item xs={2} sm={4} md={4} key={index}> */}
-            <Card card={card.num} />
+            <Card card={card} />
           </Grid>
         ))}
       </Grid>
