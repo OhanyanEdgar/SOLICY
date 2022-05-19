@@ -7,11 +7,11 @@ import Header from "../Header"
 import Cards from "../Cards"
 import Footer from "../Footer"
 
-const Main = ({ cards }) => {
+const Main = () => {
   return (
     <div className='w-75 bg-light'>
       <Header />
-      <Cards cards={cards}/>
+      <Cards />
       <Footer />
     </div>
   )
