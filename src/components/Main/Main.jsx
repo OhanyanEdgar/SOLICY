@@ -1,9 +1,20 @@
 
+// Important
+import React from "react";
 
-import React from 'react'
+// Components
+import Header from "../Header"
+import Cards from "../Cards"
+import Footer from "../Footer"
 
-export default Main = () => {
+const Main = ({ cards }) => {
   return (
-    <div>Main</div>
+    <div className='w-75 bg-light'>
+      <Header />
+      <Cards cards={cards}/>
+      <Footer />
+    </div>
   )
 }
+
+export default Main;

@@ -1,7 +1,16 @@
+
+// Important
 import React from 'react'
 
-export default Header = () => {
+// Styles 
+import "./Header.scss"
+
+const Header = () => {
   return (
-    <div>Header</div>
+    <div className='header'>
+      Header
+    </div>
   )
 }
+
+export default Header;
