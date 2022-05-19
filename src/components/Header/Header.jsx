@@ -3,6 +3,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { addCard } from "../../state/actions/cardsActions";
+import { sortCards } from "../../state/actions/cardsActions";
 
 // Styles 
 import "./Header.scss"
@@ -15,7 +16,7 @@ const Header = () => {
     <div className='header'>
       Header
       <button onClick={() => dispatch(addCard())}>Add Card</button>
-      <button onClick={() => dispatch(addCard())}>Del Card</button>
+      <button onClick={() => dispatch(sortCards())}>Sort Cards</button>
     </div>
   )
 }
