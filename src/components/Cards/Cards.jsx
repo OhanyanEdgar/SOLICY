@@ -19,10 +19,8 @@ const Cards = ({}) => {
       <div className='container'>
         
         <Grid container spacing={2} >
-        {/* <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}> */}
         {cards.map(card => (
           <Grid item xs={2} sm={4} md={6} key={card.id}>
-          {/* <Grid item xs={2} sm={4} md={4} key={index}> */}
             <Card card={card} />
           </Grid>
         ))}

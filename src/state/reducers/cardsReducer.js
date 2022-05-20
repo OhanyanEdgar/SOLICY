@@ -1,5 +1,6 @@
 
-
+// Important
+import uuid from "react-uuid";
 import {types} from "../actions/cardsActions"
 
 const cardsReducer = (state = [], action) => {
@@ -7,13 +8,12 @@ const cardsReducer = (state = [], action) => {
         case types.ADD_CARD:
             return [...state, {
                 num: Math.floor(Math.random() * 100),
-                id: Math.random(),
-                color: Math.random().toString(16).substr(-6),
+                id: uuid(),
             }];
         case types.DEL_CARD:
             return state.filter(card => card.id !== action.payload);
         case types.SORT_CARDS:
-            return [...state.sort((a, b) => a.num - b.num)]
+            return [...state.sort((curent, next) => curent.num - next.num)]
         default:
             return state;
     }

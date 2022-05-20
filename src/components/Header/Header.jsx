@@ -4,6 +4,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { addCard } from "../../state/actions/cardsActions";
 import { sortCards } from "../../state/actions/cardsActions";
+import { Button } from '@mui/material';
 
 // Styles 
 import "./Header.scss"
@@ -14,9 +15,12 @@ const Header = () => {
 
   return (
     <div className='header'>
-      Header
-      <button onClick={() => dispatch(addCard())}>Add Card</button>
-      <button onClick={() => dispatch(sortCards())}>Sort Cards</button>
+      <Button variant="outlined" color="success"
+        onClick={() => dispatch(addCard())}
+      >Add Card</Button>
+      <Button variant="outlined" className="ml-3"
+        onClick={() => dispatch(sortCards())}
+      >Sort Cards</Button>
     </div>
   )
 }

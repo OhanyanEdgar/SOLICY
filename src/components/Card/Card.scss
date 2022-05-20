@@ -2,7 +2,24 @@
 .card{
     width: 250px;
     height: 130px;
-    border: 1px solid black;
-    background-color: beige;
     text-align: center;
+
+    .delButtonBox{
+        display: flex;
+        justify-content: end;
+        margin: 5px;
+    
+        .delButton{
+            color: rgb(80, 74, 75);
+            cursor: pointer;
+        }
+    }
+
+    .cardNum{
+        color: rgb(150, 150, 150);
+        font-size: 40px;
+    }
 }
+
+
+
